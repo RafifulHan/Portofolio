@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Rafiful Han</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <!-- Styles -->
+        <style>
+            *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            
+            font-family: 'Permanent Marker', cursive;
+            color: whitesmoke;
+            background-image: url(img/magic_forest.jpg);
+            background-position-x: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            width: 100%;
+            background-color: rgb(0,0,0,0.6);
+            box-shadow: 0 2px 2.5px 0.5px #000;
+            position: relative;
+            z-index: 1;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        header h1{
+            font-size: 25pt;
+            display: inline-block;
+            padding: 15px 20px;
+        }
+        header nav{
+            display: inline-block;
+            float: right;
+            height: 82px;
+        }
+        header nav a{
+            font-family: 'Permanent Marker', cursive;
+            text-decoration: none;
+            color: whitesmoke;
+            width: 90px;
+            display: inline-block;
+            line-height: 80px;
+            font-size: 12pt;
+            text-align: center;
+        }
+        main{
+            width: 100%;
+        }
+        
+        main #container{
+            width: 90%;
+            background-color: rgb(0,0,0,0.6);
+            margin: auto;
+            padding: 45px 24px;
+            box-shadow: 0 0 2.5px 1.5px #000;
+            list-style-type: none;
+        }
+
+        main #container .intro{
+            box-shadow: -3px -3px 5px 0 #000;
+            border-radius: 15px;
+            width: 400px;
+            display: inline-block;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 25px;
+        }
+
+        main #container .profile{
+            float: left;
+            margin: 20px 20px 0 10px;
+            display: inline-block;
+        }
+
+        main #container .profile img{
+            border-radius: 50px 50%;
+            border: 2px solid #17202A;  
+            width: 150px;
+            height: 150px;
+            opacity: 0.8;
+        }
+
+        main #container h2{
+            background-color: transparent;
+            padding: 7px 35px;
+            text-align: center;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+        main #container .moral{
+            margin: 60px auto 60px auto;
+            width: 100%;
+            text-align: center;
+            padding: 40px 0 65px 0;
+            border-top: 2px solid lightgrey;
+            border-bottom: 2px solid lightgrey;
+        }
+
+        main #container .contact{
+            margin: 60px 50px 60px 50px;
+        }
+
+        footer{
+            width: 100%;
+            background-color: rgb(0,0,0,0.6);
+            text-align: center;
+            line-height: 80px;
+            box-shadow: 0 -2px 2.5px 0.5px #000;
+            box-sizing: border-box;
+        }
+        footer p,a{
+            font-size: 14pt;
+            color: whitesmoke;
+        }
+
+        a:hover{
+            border-bottom: 2px solid #FFF;
+        }
+
+        @media(max-width: 996px){
+            nav{
+                display: block;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 100px;
+                box-sizing: border-box;
+                box-shadow: 0 2px 2.5px 0.5px #000;
+                border-bottom-right-radius: 10px; 
+                border-bottom-left-radius: 10px; 
+            }
+            nav a{
+                display: block;
+                width: 100%;
+            }
+            main #container{
+                margint-top: 200px;
+            }
+
+            main #container .intro{
+                width: 100%;
+                padding-left: 140px;
+                margin-top: 0;
+            }
+
+            main #container .profile img{
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                margin: 25px 0;
+            }
+
+            .zero-left{
+                margin-left: 5px;
+            }
+
+            .one-left{
+                margin-left: 10px;
+            }
+            .two-left{
+                margin-left: 15px;
+            }
+            .three-left{
+                margin-left: 5px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+
+        <audio autoplay controls="hidden">
+            <source src="audio/Forest Elf Music - Elf Village.mp3" type="audio/mp3">
+        </audio>
+
+        <header>
+            <h1>Rafiful Han</h1>
+            <nav>
+                <a href="">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#moral">MORAL</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+
+        <main>
+            <div id="container">
+                <h2 id="about">About</h2>
+                <div class="profile">
+                    <img src="img/profile.jpg">
+                </div>
+
+                
+
+                <div class="intro">
+                    <p>Hello My Name is Muhammad <span class="zero-left"> Rafiful Hana. </span></p>
+                    <p class="one-left">My Nicname Is Anang.</p>
+                    <p class="two-left">I am 16 Years Old.</p>
+                    <p class="three-left">I Life In Indonesia Country.</p>
+                    <p>And My Address on Kudus City.</p>
+                </div>
+
+                <div style="clear: both;"></div>
+
+            <div class="moral" id="moral">
+                <h2>Moral</h2>
+                <p>Actually I'm a selfish person when asked for help in things I don't like.</p><br>
+                <p>I like things that concern issues regarding the world of the Internet.</p><br>
+                <p>I prefer myself and be alone.</p><br>
+                <p>And when I get into trouble, I examine myself, am I wrong or is he guilty?What I hoped for and dreamed of, I was now pursuing that desire and dream.
+                    And what is my desire and hope? I want to make my parents happy, especially my mother, and the second wish is that I want to visit a fantasy world
+                    that I always imagined and one of the sources that made me feel that was because I saw a film that exposed a beauty and peace, it makes me happy.
+                </p>
+            </div>
+
+            <div class="contact" id="contact">
+                <h2>Contact</h2>
+                <p>Contact Person: 6287837394536</p>
+                <p>Email: anang2018rplrus2@gmail.com</p>
+                <p>Instagram: <a href="">@shang_ryu</p>
+                <p>Facebook: Shang Ryu</p>
+            </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2019 <a href="https://rafifulhan.github.io/home/index.html">rafifulhan.github.io</a></p>
+        </footer>
+    </body>
+</html>
